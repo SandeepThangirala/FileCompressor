@@ -1,4 +1,3 @@
-//pp_5596.txt instructions
 
 Step 1: Make sure you have 5 files when you unzip the "pp_5596.zip". The five files are
 	1) henc_5596.java
@@ -16,11 +15,11 @@ Step 3: After Step 2, (I make an assumption that you have copied the files) comp
 
 Step 4: After Step 3 is successfully completed, you can give your test files as mentioned below.
 	Steps:
-	a) Take the file which you want to compress and place it in the same folder where you have placed the 			".java" files. Lets say the name of the file is "cs610.pdf". In the command line you need to paste 
-	"java henc_5596 cs610.txt" and press Enter. Rename the original file to "cs610_original.txt"
-	b) As a result of step a, we can find a new file in the same folder with ".huf" extension. In this example 		we can find "cs610.pdf.huf". This means that the file got compressed successfully. 
-	c) Now, for decompression, we need to paste "java hdec_5596 cs610.pdf.huf" in the command line and press 		Enter. If the file exists, the code deletes the original file and regenerates a new file with same name.		(here it is cs610.txt).
-	d) Now, use "diff" command. Here, we use "diff cs610_original.txt cs610.txt", if the original file and the 		file created in step c are different, we get a message that those files differ.
+	a) Take the file which you want to compress and place it in the same folder where you have placed the 			".java" files. Lets say the name of the file is "xyz.pdf". In the command line you need to paste 
+	"java henc_5596 xyz.txt" and press Enter. Rename the original file to "xyz_original.txt"
+	b) As a result of step a, we can find a new file in the same folder with ".huf" extension. In this example 		we can find "xyz.pdf.huf". This means that the file got compressed successfully. 
+	c) Now, for decompression, we need to paste "java hdec_5596 xyz.pdf.huf" in the command line and press 		Enter. If the file exists, the code deletes the original file and regenerates a new file with same name.		(here it is xyz.txt).
+	d) Now, use "diff" command. Here, we use "diff cs610_original.txt xyz.txt", if the original file and the 		file created in step c are different, we get a message that those files differ.
 
 Notes:
 -> For small files the compression is not worth it. Sometimes you get the compressed file of the same size as that of the original file.
